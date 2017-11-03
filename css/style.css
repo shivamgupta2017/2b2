@@ -1,0 +1,49 @@
+/* Empty. Add your own CSS if you like */
+
+.bar.bar-assertive{
+  background-color:#cd3333;
+  border-bottom:none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #636363;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #636363;
+}
+
+
+.spinner svg{  
+  width: 19% !important;
+  height: 85px !important;
+}
+.abc{
+	background-color: white;
+	text-align: center;
+	color: black;
+	width: 40%;
+	}
+.def {
+	background-color: white;
+	text-align: center;
+	color: black;
+	width: 40%;
+	}	
+.cell {
+   width: 33%
+}
+
+.popup 
+{
+     background-color: white !important;
+}
+.top_triangle
+{
+
+  width: 0;
+  height: 0;
+  border-top: 100px solid gray;
+  border-right: 100px solid transparent;
+  
+}
+

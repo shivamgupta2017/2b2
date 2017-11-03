@@ -1,0 +1,32 @@
+<ion-modal-view style="transform:none !important;">
+  <ion-header-bar style="background-color:#cd3333; border-bottom:none;">
+    <div class="buttons">
+          <button class="button back-button buttons button-clear header-item" style="margin-top:5px; color:white" ng-click="close_product_cat_details_model()">
+            <i class="icon ion-android-arrow-back"></i>
+          </button>
+    </div>
+    
+      <div class="title light" style="text-align: center; margin-top:5px;">Products</div>    
+  </ion-header-bar >
+    <ion-content class="has-header padding" style="margin-top: 0%">
+      <div class="list card" ng-repeat="pd in product_details">
+        <div class="item item-image">
+          <img src="{{image_url+pd.image}}">
+            <div class="text-on-image card-title-shadow">
+              <br>
+              <h2>{{pd.product_name}}</h2>
+              <!-- <h3>Tuesday, 5th of November 2015</h3> -->
+            </div>
+            <!-- <p class="text-ellipse">L’artiste Feridun Akgüngör nous présente aujourd’hui « Minimal Pure », une série de clichés où seuls figurent des morceaux d’architectures aux lignes droites, semblant flotter au milieu d’un ciel complètement lisse, dont la clarté n’est brisée que par le passage d’un avion ou d’une horde d’oiseaux.</p> -->
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+    </ion-content>
+</ion-modal-view>

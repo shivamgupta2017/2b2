@@ -1,0 +1,24 @@
+<ion-view cache-view="false">
+	<ion-nav-title style="margin-top:10px;">
+    <center style="margin-top:10px;"> <!--<img class="home-logo" src="img/l5.png"  style="padding-left: 10px;  margin: 0 auto;  border:1px solid white;" height="50">-->
+    Categories
+    </center>
+	    </ion-nav-title>
+		<ion-nav-buttons side="left">
+			<button ng-click="go_back()" class="button back-button buttons button-clear header-item">
+				<i class="icon ion-android-arrow-back"></i>
+			</button>
+		</ion-nav-buttons>
+    <ion-content class="has-header padding-top margin-top" style="padding-top: 5%; width: 98vw; background-color: #FFFF;">
+          
+          <div ng-click="category_name_clicked(pc.id)" class="col-50" style="display: inline-block; float: left;" ng-repeat="pc in product_category.data">
+            <div class="list card" style="margin-bottom: 0px ;">
+              <div class="item item-body">
+                <img class="full-image" style="border-radius: 50%;" src="{{base_url+pc.image}}">
+                  <p>{{pc.category_name}}</p>
+              </div>
+            </div>
+          </div>
+
+  	</ion-content>
+</ion-view>
